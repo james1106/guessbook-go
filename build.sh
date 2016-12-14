@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# SERVICES=("guestbook" "greeter")
+SERVICES=("guestbook" "greeter")
 # SERVICES=("greeter")
 # SERVICES=("guestbook")
 VERSION=$1
