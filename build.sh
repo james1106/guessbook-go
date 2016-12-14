@@ -39,4 +39,4 @@ do
     deploy_service
 done
 
-delete_images
+# delete_images
