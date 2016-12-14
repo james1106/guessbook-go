@@ -62,6 +62,7 @@ func ListPushHandler(rw http.ResponseWriter, req *http.Request) {
 func InfoHandler(rw http.ResponseWriter, req *http.Request) {
 	rqId := uuid.NewRandom()
 	fmt.Println(rqId)
+	go greeterClient()
 	//rqCtx := appContext.WithRqId(httpContext, string(rqId))
 	//logger := appContext.Logger(rqCtx)
 
@@ -105,7 +106,6 @@ func main() {
 
 	n := negroni.Classic()
 	n.UseHandler(r)
-	go greeterClient()
 	n.Run(":3000")
 
 }
