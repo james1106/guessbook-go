@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #SERVICES=("guestbook" "greeter")
-SERVICES=("greeter")
-# SERVICES=("guestbook")
+#SERVICES=("greeter")
+SERVICES=("guestbook")
 VERSION=$1
 # upgrade_package
 
